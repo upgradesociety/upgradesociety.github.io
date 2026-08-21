@@ -1,0 +1,17 @@
+{
+  "name": "citizen-upgrade-homedev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HomeDev umbrella controls for the Upgrade Society Hugo site in new/.",
+  "scripts": {
+    "content:check": "npm --prefix new run content:check",
+    "content:status": "npm --prefix new run content:status",
+    "content:pull": "npm --prefix new run content:pull",
+    "content:curation:apply": "npm --prefix new run content:curation:apply",
+    "content:apply": "npm --prefix new run content:apply",
+    "content:verify": "npm --prefix new run content:verify",
+    "content:sync": "npm --prefix new run content:sync",
+    "content:commit": "npm --prefix new run content:commit",
+    "preview": "hugo server -D --source new --bind 0.0.0.0 --port 1315"
+  }
+}

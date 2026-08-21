@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="book-layout">
+  {{ partial "wiki-sidebar.html" . }}
+  <main id="main" class="book-main">
+    <article class="book-article">
+      <header class="article-header">
+        <p class="eyebrow">{{ .Params.kicker | default "Upgrade Society" }}</p>
+        <h1>{{ if eq .RelPermalink "/articles/" }}Essays{{ else }}{{ .Title }}{{ end }}</h1>
+        {{ with .Description }}<p class="article-deck">{{ . }}</p>{{ end }}
+      </header>
+      <div class="article-body prose">{{ .Content }}</div>
+      {{ if .RegularPages }}
+      <section class="page-list">
+        {{ range .RegularPages.ByDate.Reverse }}
+        <a href="{{ .RelPermalink }}"><span><strong>{{ .Title }}</strong>{{ with .Description }}<small>{{ . }}</small>{{ end }}<small class="page-list-meta">{{ .Params.content_type }}{{ with .Date }} · Published {{ .Format "2 Jan 2006" }}{{ else }}{{ with .Params.published_at }} · Published {{ . }}{{ else }}{{ with site.Params.defaultPublicationDate }} · Published {{ . }}{{ end }}{{ end }}{{ end }}</small></span><span aria-hidden="true">→</span></a>
+        {{ end }}
+      </section>
+      {{ end }}
+    </article>
+  </main>
+  <aside class="book-toc" aria-label="On this page"><div class="book-toc-inner"><p class="toc-label">Section</p><p class="toc-empty">Browse the current collection.</p></div></aside>
+</div>
+{{ end }}

@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="book-layout">
+  {{ partial "wiki-sidebar.html" . }}
+  <main id="main" class="book-main">
+    <article class="book-article">
+      <header class="article-header">
+        <p class="eyebrow">{{ .Params.kicker | default .Params.content_type | default .Parent.Title }}</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="article-deck">{{ . }}</p>{{ end }}
+        <div class="content-meta">
+          <span>Written by <a href="{{ site.Params.authorURL | relURL }}">{{ site.Params.author }}</a></span>
+          {{ with .Date }}<span>Published {{ .Format "2 January 2006" }}</span>{{ else }}{{ with .Params.published_at }}<span>Published {{ . }}</span>{{ else }}{{ with site.Params.defaultPublicationDate }}<span>Published {{ . }}</span>{{ end }}{{ end }}{{ end }}
+          {{ with .Params.content_type }}<span>{{ . }}</span>{{ end }}
+        </div>
+      </header>
+
+      {{ with .Params.hero_image }}<figure class="article-banner"><img src="{{ . | relURL }}" alt="" loading="eager"></figure>{{ end }}
+      <div class="article-body prose">{{ .Content }}</div>
+
+      {{ with .Params.relationships }}
+      <section class="related-content"><p class="eyebrow">Related</p>
+        {{ range . }}{{ $parts := split . "|" }}{{ if ge (len $parts) 2 }}{{ $relationType := index $parts 0 }}{{ $contentID := index $parts 1 }}{{ range where site.RegularPages "Params.content_id" $contentID }}
+        <a href="{{ .RelPermalink }}"><span><strong>{{ .Title }}</strong><small>{{ $relationType }}</small></span><span aria-hidden="true">→</span></a>
+        {{ end }}{{ end }}{{ end }}
+      </section>
+      {{ end }}
+
+      {{ if or .Params.author .Params.published_at .Params.content_id .Params.last_reviewed .Params.content_status .Params.source_title .Params.source_url .Params.first_published_at }}
+      <details class="editorial-meta"><summary>Editorial metadata</summary><div>
+        {{ with .Params.author }}<p><strong>Author:</strong> {{ . }}</p>{{ else }}{{ with site.Params.author }}<p><strong>Author:</strong> {{ . }}</p>{{ end }}{{ end }}
+        {{ with .Params.published_at }}<p><strong>Published:</strong> {{ . }}</p>{{ else }}{{ with .Date }}<p><strong>Published:</strong> {{ .Format "2 January 2006" }}</p>{{ else }}{{ with site.Params.defaultPublicationDate }}<p><strong>Published:</strong> {{ . }}</p>{{ end }}{{ end }}{{ end }}
+        {{ with .Params.content_id }}<p><strong>Content ID:</strong> <code>{{ . }}</code></p>{{ end }}
+        {{ with .Params.content_status }}<p><strong>Status:</strong> {{ . }}</p>{{ end }}
+        {{ with .Params.last_reviewed }}<p><strong>Last reviewed:</strong> {{ . }}</p>{{ end }}
+        {{ with .Params.source_title }}<p><strong>Source title:</strong> {{ . }}</p>{{ end }}
+        {{ with .Params.source_url }}<p><strong>Source:</strong> <a href="{{ . }}">{{ . }}</a></p>{{ end }}
+        {{ with .Params.first_published_at }}<p><strong>First published in archive:</strong> {{ . }}</p>{{ end }}
+      </div></details>
+      {{ end }}
+    </article>
+  </main>
+  <aside class="book-toc" aria-label="On this page">
+    <div class="book-toc-inner"><p class="toc-label">On this page</p>{{ if and .Params.toc (gt (len .TableOfContents) 80) }}{{ .TableOfContents }}{{ else }}<p class="toc-empty">A focused reading page.</p>{{ end }}</div>
+  </aside>
+</div>
+{{ end }}

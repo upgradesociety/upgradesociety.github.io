@@ -1,0 +1,16 @@
+<aside id="book-sidebar" class="book-sidebar" aria-label="Site navigation">
+  <div class="book-sidebar-inner">
+    <label class="sidebar-search" for="sidebar-search">
+      <span class="visually-hidden">Filter navigation</span>
+      <input id="sidebar-search" type="search" placeholder="Search…" autocomplete="off">
+      <kbd>⌘K</kbd>
+    </label>
+    {{ partial "wiki-sidebar-content.html" . }}
+    <div class="sidebar-note">
+      <span class="note-mark" aria-hidden="true">◒</span>
+      <p>Upgrade Society is a public notebook for ideas about becoming better citizens and building a better society.</p>
+      <a href="/about/">Learn more →</a>
+    </div>
+  </div>
+</aside>
+<div class="sidebar-scrim" hidden></div>

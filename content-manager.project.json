@@ -1,0 +1,87 @@
+{
+  "schema_version": 5,
+  "project_key": "upgrade-society",
+  "title": "Upgrade Society",
+  "project_type": "website",
+  "content_authority": {
+    "system": "content-manager",
+    "logical_database": "AI-System/Projects/content-manager/data/content-studio.sqlite",
+    "database_env": "CONTENT_DB_PATH",
+    "item_table": "content_items",
+    "id_field": "content_id",
+    "version_table": "content_versions",
+    "publication_table": "publications",
+    "project_table": "content_projects",
+    "binding_table": "content_bindings"
+  },
+  "artifacts": [
+    {
+      "environment": "new",
+      "kind": "json_catalog",
+      "path": ".content/content.json",
+      "generated": true,
+      "authoritative": false
+    }
+  ],
+  "sync": {
+    "direction": "content_manager_to_project",
+    "authority": "content-manager",
+    "generated_artifacts_are_authoritative": false,
+    "local_content_edits": "commit_to_content_manager_then_regenerate",
+    "publication_edits": "content_manager_only",
+    "conflict_policy": "never_overwrite_local_canonical_changes_silently",
+    "deploy_policy": "fail_if_binding_stale_conflicted_or_local_changes_pending"
+  },
+  "public_metadata": {
+    "content_id": "stable_canonical_content_identity",
+    "secrets_allowed": false,
+    "content_manager_id": "internal_content_manager_row_identity",
+    "slug": "project_route_identity"
+  },
+  "outlet": {
+    "outlet_key": "upgrade-society-web",
+    "title": "Upgrade Society Website",
+    "outlet_type": "website",
+    "platform": "website",
+    "public_base_url": "https://upgradesociety.org",
+    "legacy_platforms": [
+      "Upgrade Society"
+    ]
+  },
+  "view_config": "content.view.json",
+  "curation": {
+    "source": "content-manager",
+    "collection_slug": "upgrade-society-website",
+    "collection_role": "website_content",
+    "bootstrap_config": "content.bootstrap.json",
+    "project_side_membership_edits": "change_set_only",
+    "desired_state_config": "content.bootstrap.json",
+    "reconcile_command": "npm run content:write -- \"<summary>\""
+  },
+  "change_sets": {
+    "enabled": true,
+    "apply_command": [
+      "npm",
+      "run",
+      "content:apply"
+    ],
+    "verify_command": [
+      "npm",
+      "run",
+      "content:verify"
+    ],
+    "git": {
+      "commit_paths": [
+        "content.bootstrap.json",
+        "content"
+      ],
+      "allow_empty_commit": true
+    }
+  },
+  "migration": {
+    "status": "content-studio-contract-pending",
+    "source_project": "citizen-upgrade",
+    "source_commit": "461172acc83c252793b203a574a774445eaaa2d4",
+    "writes_enabled": false
+  }
+}

@@ -1,0 +1,21 @@
+{{ $contentData := index site.Data "citizen-upgrade-new-content" }}
+<header class="site-header">
+  <div class="header-inner">
+    <button class="sidebar-toggle" type="button" aria-label="Open navigation" aria-controls="book-sidebar" aria-expanded="false">☰</button>
+    <a class="site-title" href="/start/" aria-label="Upgrade Society home">
+      <span class="site-mark" aria-hidden="true">CU</span>
+      <span>Upgrade Society</span>
+    </a>
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="/start/"{{ if hasPrefix .RelPermalink "/start/" }} aria-current="page"{{ end }}>Start Here</a>
+      <a href="/start/#quick-start">Quick Start</a>
+      {{ range $contentData.sections }}
+        {{ if ne .name "About" }}
+          <a href="/start/#{{ .name | anchorize }}"{{ if eq $.Params.citizen_upgrade_section .name }} aria-current="page"{{ end }}>{{ .name }}</a>
+        {{ end }}
+      {{ end }}
+      <a href="/about/"{{ if eq .RelPermalink "/about/" }} aria-current="page"{{ end }}>About</a>
+    </nav>
+    <a class="header-search-link" href="#sidebar-search" aria-label="Search navigation">⌕</a>
+  </div>
+</header>

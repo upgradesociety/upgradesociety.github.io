@@ -1,0 +1,444 @@
+{
+  "generated_from": ".content/content.json",
+  "generated_by": "scripts/apply-content-projection.mjs",
+  "name": "Upgrade Society — Content Studio Projection",
+  "quick_start": [
+    "what-could-an-upgraded-society-look-like",
+    "what-is-co-created-money",
+    "why-the-fiat-system-is-useless-for-the-working-class",
+    "what-are-upgraded-communities"
+  ],
+  "sections": [
+    {
+      "name": "General",
+      "description": "Orientation pieces for understanding Upgrade Society and the transition it explores.",
+      "items": [
+        {
+          "content_id": "what-could-an-upgraded-society-look-like",
+          "title": "What Could an Upgraded Society Look Like?",
+          "description": "A concise overview of why the old model feels fragile and how more affordable, resilient and cooperative ways of living could emerge.",
+          "site_role": "overview",
+          "featured": true,
+          "sort_order": 1,
+          "slug": "start/what-could-an-upgraded-society-look-like",
+          "url": "/start/what-could-an-upgraded-society-look-like/"
+        }
+      ],
+      "sort_order": 1
+    },
+    {
+      "name": "Co-Created Money",
+      "description": "Money creation, universal dividends, Ğ1 and experiments in human-centered monetary systems.",
+      "items": [
+        {
+          "content_id": "co-created-money-an-idea-that-has-been-around-for-thousands-of-years",
+          "title": "History of Money",
+          "description": "A historical introduction to the recurring idea that communities can create exchange media themselves through mutual credit and related systems.",
+          "site_role": "essay",
+          "featured": false,
+          "sort_order": 2,
+          "slug": "articles/the-core-idea-co-created-money",
+          "url": "/articles/the-core-idea-co-created-money/"
+        },
+        {
+          "content_id": "what-is-co-created-money",
+          "title": "What is Co-Created Money",
+          "description": "The clearest conceptual introduction: instead of redistributing money after creation, participants share equally in creating it from the beginning.",
+          "site_role": "essay",
+          "featured": true,
+          "sort_order": 3,
+          "slug": "articles/what-is-co-created-money",
+          "url": "/articles/what-is-co-created-money/"
+        },
+        {
+          "content_id": "g1-currency",
+          "title": "The Universal Dividend — How Money Is Created",
+          "description": "A focused explanation of Ğ1’s Universal Dividend: every human participant creates money equally through time.",
+          "site_role": "explainer",
+          "featured": false,
+          "sort_order": 4,
+          "slug": "ideas/the-universal-dividend",
+          "url": "/ideas/the-universal-dividend/"
+        },
+        {
+          "content_id": "1-june-a-human-centered-currency",
+          "title": "Ğ1 (June) — Introduction to Ğ1",
+          "description": "A practical introduction to Ğ1, the Relative Theory of Money and human-based issuance compared with fiat and Bitcoin.",
+          "site_role": "outline",
+          "featured": false,
+          "sort_order": 5,
+          "slug": "articles/introduction-to-g1",
+          "url": "/articles/introduction-to-g1/"
+        },
+        {
+          "content_id": "the-libre-money-experiment-1-and-the-economics-of-universal-dividend",
+          "title": "The Libre Money Experiment, Ğ1 and the Economics of Universal Dividend",
+          "description": "A compact technical outline of Ğ1, the Universal Dividend, monetary symmetry and the Relative Theory of Money.",
+          "site_role": "outline",
+          "featured": false,
+          "sort_order": 6,
+          "slug": "articles/the-libre-money-experiment-g1-and-the-economics-of-universal-dividend",
+          "url": "/articles/the-libre-money-experiment-g1-and-the-economics-of-universal-dividend/"
+        },
+        {
+          "content_id": "the-libre-currency-g1-and-the-future-of-human-centered-money",
+          "title": "The Libre Currency: Ğ1 and the Future of Human-Centered Money",
+          "description": "The deepest existing guide to Ğ1, covering its monetary theory, implementation, Web of Trust and broader philosophy.",
+          "site_role": "guidebook",
+          "featured": false,
+          "sort_order": 7,
+          "slug": "guides/the-libre-currency-g1",
+          "url": "/guides/the-libre-currency-g1/"
+        },
+        {
+          "content_id": "g1-the-currency-of-trust",
+          "title": "G1 — The Currency of Trust",
+          "description": "A moral and institutional argument for Ğ1 as money built around trust rather than debt-based dependence.",
+          "site_role": "essay",
+          "featured": false,
+          "sort_order": 8,
+          "slug": "articles/g1-the-currency-of-trust",
+          "url": "/articles/g1-the-currency-of-trust/"
+        }
+      ],
+      "sort_order": 2
+    },
+    {
+      "name": "The World Now",
+      "description": "Diagnosis of the pressures shaping everyday life: money, work, generational change, conflict and institutional strain.",
+      "items": [
+        {
+          "content_id": "why-the-fiat-system-is-useless-for-the-working-class",
+          "title": "Why the Fiat System Is Useless for the Working Class",
+          "description": "An argument that financialized fiat money has broken the connection between work, saving and long-term security for ordinary earners.",
+          "site_role": "essay",
+          "featured": true,
+          "sort_order": 9,
+          "slug": "articles/why-the-fiat-system-is-useless-for-the-working-class",
+          "url": "/articles/why-the-fiat-system-is-useless-for-the-working-class/"
+        },
+        {
+          "content_id": "the-problem-is-simpler-than-we-think-video-script",
+          "title": "The Problem Is Simpler Than We Think",
+          "description": "A structural diagnosis that traces housing, wages and credit problems back to how new money is created and who gets first access to it.",
+          "site_role": "outline",
+          "featured": false,
+          "sort_order": 10,
+          "slug": "articles/the-problem-is-simpler-than-we-think",
+          "url": "/articles/the-problem-is-simpler-than-we-think/"
+        },
+        {
+          "content_id": "why-the-millennials-will-lead-the-new-change",
+          "title": "Why the Millennials Will Lead the New Change",
+          "description": "A generational argument that people promised stability but given debt, inflation and insecurity may become the builders of new institutions.",
+          "site_role": "essay",
+          "featured": false,
+          "sort_order": 11,
+          "slug": "articles/why-the-millennials-will-lead-the-new-change",
+          "url": "/articles/why-the-millennials-will-lead-the-new-change/"
+        },
+        {
+          "content_id": "why-is-there-so-much-conflict-and-trauma-in-the-world-why-do-we-feel-so-bad",
+          "title": "Why Is There So Much Conflict and Trauma in the World?",
+          "description": "A structural exploration of conflict, resentment and burnout through powerlessness, monetary systems and institutional design.",
+          "site_role": "outline",
+          "featured": false,
+          "sort_order": 12,
+          "slug": "articles/why-is-there-so-much-conflict-and-trauma-in-the-world",
+          "url": "/articles/why-is-there-so-much-conflict-and-trauma-in-the-world/"
+        }
+      ],
+      "sort_order": 3
+    },
+    {
+      "name": "Nation States",
+      "description": "How nation-states, public finance and large-scale political order may change through the coming transition.",
+      "items": [
+        {
+          "content_id": "from-2025-to-2050-how-can-the-world-look-like-in-2050",
+          "title": "From 2025 to 2050 — The World in Transition",
+          "description": "A future scenario in which nation-states remain but everyday life becomes more local, regional and networked as centralized legitimacy weakens.",
+          "site_role": "scenario",
+          "featured": false,
+          "sort_order": 13,
+          "slug": "articles/from-2025-to-2050-the-world-in-transition",
+          "url": "/articles/from-2025-to-2050-the-world-in-transition/"
+        },
+        {
+          "content_id": "bitbonds",
+          "title": "BitBonds",
+          "description": "A speculative proposal for euro-denominated bonds collateralized by Bitcoin as a bridge between hard digital collateral and public finance.",
+          "site_role": "outline",
+          "featured": false,
+          "sort_order": 14,
+          "slug": "articles/bitbonds",
+          "url": "/articles/bitbonds/"
+        }
+      ],
+      "sort_order": 4
+    },
+    {
+      "name": "Cooperatives",
+      "description": "Cooperatives, upgraded communities, hubs and local economic institutions that can be built in practice.",
+      "items": [
+        {
+          "content_id": "what-are-upgraded-communities",
+          "title": "What Are Upgraded Communities?",
+          "description": "A place-first vision of affordable, calmer and more resilient communities that reduce dependence on distant systems without requiring national revolution.",
+          "site_role": "essay",
+          "featured": true,
+          "sort_order": 15,
+          "slug": "articles/what-are-upgraded-communities",
+          "url": "/articles/what-are-upgraded-communities/"
+        },
+        {
+          "content_id": "the-cooperative-century-from-awakening-to-sovereign-civilization",
+          "title": "The Cooperative Century",
+          "description": "A multi-decade roadmap from small cooperatives and experimental currencies toward a mature civic and cooperative economy.",
+          "site_role": "guidebook",
+          "featured": false,
+          "sort_order": 16,
+          "slug": "guides/the-cooperative-century",
+          "url": "/guides/the-cooperative-century/"
+        },
+        {
+          "content_id": "upgrade-hubs",
+          "title": "Upgrade Hubs",
+          "description": "A practical concept for temporary co-living gatherings in depopulating regions to test community, regenerative living and alternative economies.",
+          "site_role": "project-outline",
+          "featured": false,
+          "sort_order": 17,
+          "slug": "projects/upgrade-hubs",
+          "url": "/projects/upgrade-hubs/"
+        },
+        {
+          "content_id": "the-1-society-regional-depopulation-a-strategy-for-an-abundant-life-today",
+          "title": "The Ğ1 Society & Regional Depopulation",
+          "description": "An applied strategy combining Ğ1 with depopulated regions to explore lower-cost, higher-autonomy community life today.",
+          "site_role": "essay",
+          "featured": false,
+          "sort_order": 18,
+          "slug": "articles/the-g1-society-regional-depopulation",
+          "url": "/articles/the-g1-society-regional-depopulation/"
+        }
+      ],
+      "sort_order": 5
+    },
+    {
+      "name": "Beyond Left and Right",
+      "description": "Political and economic ideas that do not fit neatly inside the inherited socialism-versus-capitalism divide.",
+      "items": [
+        {
+          "content_id": "the-third-way-between-socialism-and-capitalism",
+          "title": "The Third Way — Between Socialism and Capitalism",
+          "description": "A proposed synthesis beyond the twentieth-century capitalism/socialism divide using co-created money, localism, cooperation and decentralization.",
+          "site_role": "essay",
+          "featured": false,
+          "sort_order": 19,
+          "slug": "articles/the-third-way-between-socialism-and-capitalism",
+          "url": "/articles/the-third-way-between-socialism-and-capitalism/"
+        }
+      ],
+      "sort_order": 6
+    },
+    {
+      "name": "About",
+      "description": "About Upgrade Society, authorship and editorial provenance.",
+      "items": [
+        {
+          "content_id": "cu-canonical-about",
+          "title": "About Upgrade Society",
+          "description": "Authorship, editorial freedom, provenance and the publishing architecture behind the project.",
+          "site_role": "canonical",
+          "featured": false,
+          "sort_order": 20,
+          "slug": "about",
+          "url": "/about/"
+        }
+      ],
+      "sort_order": 7
+    }
+  ],
+  "items": [
+    {
+      "content_id": "what-could-an-upgraded-society-look-like",
+      "title": "What Could an Upgraded Society Look Like?",
+      "description": "A concise overview of why the old model feels fragile and how more affordable, resilient and cooperative ways of living could emerge.",
+      "category": "General",
+      "featured": true,
+      "slug": "start/what-could-an-upgraded-society-look-like",
+      "url": "/start/what-could-an-upgraded-society-look-like/"
+    },
+    {
+      "content_id": "co-created-money-an-idea-that-has-been-around-for-thousands-of-years",
+      "title": "History of Money",
+      "description": "A historical introduction to the recurring idea that communities can create exchange media themselves through mutual credit and related systems.",
+      "category": "Co-Created Money",
+      "featured": false,
+      "slug": "articles/the-core-idea-co-created-money",
+      "url": "/articles/the-core-idea-co-created-money/"
+    },
+    {
+      "content_id": "what-is-co-created-money",
+      "title": "What is Co-Created Money",
+      "description": "The clearest conceptual introduction: instead of redistributing money after creation, participants share equally in creating it from the beginning.",
+      "category": "Co-Created Money",
+      "featured": true,
+      "slug": "articles/what-is-co-created-money",
+      "url": "/articles/what-is-co-created-money/"
+    },
+    {
+      "content_id": "g1-currency",
+      "title": "The Universal Dividend — How Money Is Created",
+      "description": "A focused explanation of Ğ1’s Universal Dividend: every human participant creates money equally through time.",
+      "category": "Co-Created Money",
+      "featured": false,
+      "slug": "ideas/the-universal-dividend",
+      "url": "/ideas/the-universal-dividend/"
+    },
+    {
+      "content_id": "1-june-a-human-centered-currency",
+      "title": "Ğ1 (June) — Introduction to Ğ1",
+      "description": "A practical introduction to Ğ1, the Relative Theory of Money and human-based issuance compared with fiat and Bitcoin.",
+      "category": "Co-Created Money",
+      "featured": false,
+      "slug": "articles/introduction-to-g1",
+      "url": "/articles/introduction-to-g1/"
+    },
+    {
+      "content_id": "the-libre-money-experiment-1-and-the-economics-of-universal-dividend",
+      "title": "The Libre Money Experiment, Ğ1 and the Economics of Universal Dividend",
+      "description": "A compact technical outline of Ğ1, the Universal Dividend, monetary symmetry and the Relative Theory of Money.",
+      "category": "Co-Created Money",
+      "featured": false,
+      "slug": "articles/the-libre-money-experiment-g1-and-the-economics-of-universal-dividend",
+      "url": "/articles/the-libre-money-experiment-g1-and-the-economics-of-universal-dividend/"
+    },
+    {
+      "content_id": "the-libre-currency-g1-and-the-future-of-human-centered-money",
+      "title": "The Libre Currency: Ğ1 and the Future of Human-Centered Money",
+      "description": "The deepest existing guide to Ğ1, covering its monetary theory, implementation, Web of Trust and broader philosophy.",
+      "category": "Co-Created Money",
+      "featured": false,
+      "slug": "guides/the-libre-currency-g1",
+      "url": "/guides/the-libre-currency-g1/"
+    },
+    {
+      "content_id": "g1-the-currency-of-trust",
+      "title": "G1 — The Currency of Trust",
+      "description": "A moral and institutional argument for Ğ1 as money built around trust rather than debt-based dependence.",
+      "category": "Co-Created Money",
+      "featured": false,
+      "slug": "articles/g1-the-currency-of-trust",
+      "url": "/articles/g1-the-currency-of-trust/"
+    },
+    {
+      "content_id": "why-the-fiat-system-is-useless-for-the-working-class",
+      "title": "Why the Fiat System Is Useless for the Working Class",
+      "description": "An argument that financialized fiat money has broken the connection between work, saving and long-term security for ordinary earners.",
+      "category": "The World Now",
+      "featured": true,
+      "slug": "articles/why-the-fiat-system-is-useless-for-the-working-class",
+      "url": "/articles/why-the-fiat-system-is-useless-for-the-working-class/"
+    },
+    {
+      "content_id": "the-problem-is-simpler-than-we-think-video-script",
+      "title": "The Problem Is Simpler Than We Think",
+      "description": "A structural diagnosis that traces housing, wages and credit problems back to how new money is created and who gets first access to it.",
+      "category": "The World Now",
+      "featured": false,
+      "slug": "articles/the-problem-is-simpler-than-we-think",
+      "url": "/articles/the-problem-is-simpler-than-we-think/"
+    },
+    {
+      "content_id": "why-the-millennials-will-lead-the-new-change",
+      "title": "Why the Millennials Will Lead the New Change",
+      "description": "A generational argument that people promised stability but given debt, inflation and insecurity may become the builders of new institutions.",
+      "category": "The World Now",
+      "featured": false,
+      "slug": "articles/why-the-millennials-will-lead-the-new-change",
+      "url": "/articles/why-the-millennials-will-lead-the-new-change/"
+    },
+    {
+      "content_id": "why-is-there-so-much-conflict-and-trauma-in-the-world-why-do-we-feel-so-bad",
+      "title": "Why Is There So Much Conflict and Trauma in the World?",
+      "description": "A structural exploration of conflict, resentment and burnout through powerlessness, monetary systems and institutional design.",
+      "category": "The World Now",
+      "featured": false,
+      "slug": "articles/why-is-there-so-much-conflict-and-trauma-in-the-world",
+      "url": "/articles/why-is-there-so-much-conflict-and-trauma-in-the-world/"
+    },
+    {
+      "content_id": "from-2025-to-2050-how-can-the-world-look-like-in-2050",
+      "title": "From 2025 to 2050 — The World in Transition",
+      "description": "A future scenario in which nation-states remain but everyday life becomes more local, regional and networked as centralized legitimacy weakens.",
+      "category": "Nation States",
+      "featured": false,
+      "slug": "articles/from-2025-to-2050-the-world-in-transition",
+      "url": "/articles/from-2025-to-2050-the-world-in-transition/"
+    },
+    {
+      "content_id": "bitbonds",
+      "title": "BitBonds",
+      "description": "A speculative proposal for euro-denominated bonds collateralized by Bitcoin as a bridge between hard digital collateral and public finance.",
+      "category": "Nation States",
+      "featured": false,
+      "slug": "articles/bitbonds",
+      "url": "/articles/bitbonds/"
+    },
+    {
+      "content_id": "what-are-upgraded-communities",
+      "title": "What Are Upgraded Communities?",
+      "description": "A place-first vision of affordable, calmer and more resilient communities that reduce dependence on distant systems without requiring national revolution.",
+      "category": "Cooperatives",
+      "featured": true,
+      "slug": "articles/what-are-upgraded-communities",
+      "url": "/articles/what-are-upgraded-communities/"
+    },
+    {
+      "content_id": "the-cooperative-century-from-awakening-to-sovereign-civilization",
+      "title": "The Cooperative Century",
+      "description": "A multi-decade roadmap from small cooperatives and experimental currencies toward a mature civic and cooperative economy.",
+      "category": "Cooperatives",
+      "featured": false,
+      "slug": "guides/the-cooperative-century",
+      "url": "/guides/the-cooperative-century/"
+    },
+    {
+      "content_id": "upgrade-hubs",
+      "title": "Upgrade Hubs",
+      "description": "A practical concept for temporary co-living gatherings in depopulating regions to test community, regenerative living and alternative economies.",
+      "category": "Cooperatives",
+      "featured": false,
+      "slug": "projects/upgrade-hubs",
+      "url": "/projects/upgrade-hubs/"
+    },
+    {
+      "content_id": "the-1-society-regional-depopulation-a-strategy-for-an-abundant-life-today",
+      "title": "The Ğ1 Society & Regional Depopulation",
+      "description": "An applied strategy combining Ğ1 with depopulated regions to explore lower-cost, higher-autonomy community life today.",
+      "category": "Cooperatives",
+      "featured": false,
+      "slug": "articles/the-g1-society-regional-depopulation",
+      "url": "/articles/the-g1-society-regional-depopulation/"
+    },
+    {
+      "content_id": "the-third-way-between-socialism-and-capitalism",
+      "title": "The Third Way — Between Socialism and Capitalism",
+      "description": "A proposed synthesis beyond the twentieth-century capitalism/socialism divide using co-created money, localism, cooperation and decentralization.",
+      "category": "Beyond Left and Right",
+      "featured": false,
+      "slug": "articles/the-third-way-between-socialism-and-capitalism",
+      "url": "/articles/the-third-way-between-socialism-and-capitalism/"
+    },
+    {
+      "content_id": "cu-canonical-about",
+      "title": "About Upgrade Society",
+      "description": "Authorship, editorial freedom, provenance and the publishing architecture behind the project.",
+      "category": "About",
+      "featured": false,
+      "slug": "about",
+      "url": "/about/"
+    }
+  ]
+}

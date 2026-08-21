@@ -1,0 +1,30 @@
+baseURL = "https://upgradesociety.org/"
+languageCode = "en"
+title = "Upgrade Society"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Ideas, guides, essays, scenarios, and experiments for increasing human agency and building better communities and institutions."
+  author = "Citizen Upgrade"
+  authorURL = "/about/citizen-upgrade/"
+  # Temporary fallback until Content Studio provides authoritative per-page dates.
+  defaultPublicationDate = "16 August 2026"
+  accent = "#9dff20"
+  contentManagerAPI = "http://192.168.1.247:45173/api"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[minify]
+  minifyOutput = true

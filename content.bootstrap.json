@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "description": "Upgrade Society website curation: 20 core Start Here content pieces plus the About page. Quick Start is represented by featured=true; thematic category remains independent.",
+  "identity_field": "content_id",
+  "categories": [
+    {
+      "name": "General",
+      "slug": "general",
+      "description": "Orientation pieces and practical guidebooks for understanding the project and navigating the transition."
+    },
+    {
+      "name": "Co-Created Money",
+      "slug": "co-created-money",
+      "description": "Money creation, universal dividends, \u011e1 and experiments in human-centered monetary systems."
+    },
+    {
+      "name": "The World Now",
+      "slug": "the-world-now",
+      "description": "Diagnosis of the pressures shaping everyday life: money, work, generational change, conflict and institutional strain."
+    },
+    {
+      "name": "Nation States",
+      "slug": "nation-states",
+      "description": "How nation-states, public finance and large-scale political order may change through the coming transition."
+    },
+    {
+      "name": "Cooperatives",
+      "slug": "cooperatives",
+      "description": "Cooperatives, upgraded communities, hubs and local economic institutions that can be built in practice."
+    },
+    {
+      "name": "Beyond Left and Right",
+      "slug": "beyond-left-and-right",
+      "description": "Political and economic ideas that do not fit neatly inside the inherited socialism-versus-capitalism divide."
+    },
+    {
+      "name": "About",
+      "slug": "about",
+      "description": "Authorship, provenance and editorial architecture for Upgrade Society."
+    }
+  ],
+  "items": [
+    {
+      "content_id": "what-could-an-upgraded-society-look-like",
+      "category": "General",
+      "slug": "start/what-could-an-upgraded-society-look-like",
+      "featured": true,
+      "tags": [
+        "site-role:overview"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "co-created-money-an-idea-that-has-been-around-for-thousands-of-years",
+      "category": "Co-Created Money",
+      "slug": "articles/the-core-idea-co-created-money",
+      "featured": false,
+      "tags": [
+        "site-role:essay",
+        "site-title:History of Money"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "what-is-co-created-money",
+      "category": "Co-Created Money",
+      "slug": "articles/what-is-co-created-money",
+      "featured": true,
+      "tags": [
+        "site-role:essay"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "g1-currency",
+      "category": "Co-Created Money",
+      "slug": "ideas/the-universal-dividend",
+      "featured": false,
+      "tags": [
+        "site-role:explainer"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "1-june-a-human-centered-currency",
+      "category": "Co-Created Money",
+      "slug": "articles/introduction-to-g1",
+      "featured": false,
+      "tags": [
+        "site-role:outline"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "the-libre-money-experiment-1-and-the-economics-of-universal-dividend",
+      "category": "Co-Created Money",
+      "slug": "articles/the-libre-money-experiment-g1-and-the-economics-of-universal-dividend",
+      "featured": false,
+      "tags": [
+        "site-role:outline"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "the-libre-currency-g1-and-the-future-of-human-centered-money",
+      "category": "Co-Created Money",
+      "slug": "guides/the-libre-currency-g1",
+      "featured": false,
+      "tags": [
+        "site-role:guidebook"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "g1-the-currency-of-trust",
+      "category": "Co-Created Money",
+      "slug": "articles/g1-the-currency-of-trust",
+      "featured": false,
+      "tags": [
+        "site-role:essay"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "why-the-fiat-system-is-useless-for-the-working-class",
+      "category": "The World Now",
+      "slug": "articles/why-the-fiat-system-is-useless-for-the-working-class",
+      "featured": true,
+      "tags": [
+        "site-role:essay"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "the-problem-is-simpler-than-we-think-video-script",
+      "category": "The World Now",
+      "slug": "articles/the-problem-is-simpler-than-we-think",
+      "featured": false,
+      "tags": [
+        "site-role:outline"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "why-the-millennials-will-lead-the-new-change",
+      "category": "The World Now",
+      "slug": "articles/why-the-millennials-will-lead-the-new-change",
+      "featured": false,
+      "tags": [
+        "site-role:essay"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "why-is-there-so-much-conflict-and-trauma-in-the-world-why-do-we-feel-so-bad",
+      "category": "The World Now",
+      "slug": "articles/why-is-there-so-much-conflict-and-trauma-in-the-world",
+      "featured": false,
+      "tags": [
+        "site-role:outline"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "from-2025-to-2050-how-can-the-world-look-like-in-2050",
+      "category": "Nation States",
+      "slug": "articles/from-2025-to-2050-the-world-in-transition",
+      "featured": false,
+      "tags": [
+        "site-role:scenario"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "bitbonds",
+      "category": "Nation States",
+      "slug": "articles/bitbonds",
+      "featured": false,
+      "tags": [
+        "site-role:outline"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "what-are-upgraded-communities",
+      "category": "Cooperatives",
+      "slug": "articles/what-are-upgraded-communities",
+      "featured": true,
+      "tags": [
+        "site-role:essay"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "the-cooperative-century-from-awakening-to-sovereign-civilization",
+      "category": "Cooperatives",
+      "slug": "guides/the-cooperative-century",
+      "featured": false,
+      "tags": [
+        "site-role:guidebook"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "upgrade-hubs",
+      "category": "Cooperatives",
+      "slug": "projects/upgrade-hubs",
+      "featured": false,
+      "tags": [
+        "site-role:project-outline"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "the-1-society-regional-depopulation-a-strategy-for-an-abundant-life-today",
+      "category": "Cooperatives",
+      "slug": "articles/the-g1-society-regional-depopulation",
+      "featured": false,
+      "tags": [
+        "site-role:essay"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "the-third-way-between-socialism-and-capitalism",
+      "category": "Beyond Left and Right",
+      "slug": "articles/the-third-way-between-socialism-and-capitalism",
+      "featured": false,
+      "tags": [
+        "site-role:essay"
+      ],
+      "note": null
+    },
+    {
+      "content_id": "cu-canonical-about",
+      "category": "About",
+      "slug": "about",
+      "featured": false,
+      "tags": [
+        "site-role:canonical"
+      ],
+      "note": null
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "description": "Upgrade Society presentation configuration migrated from Citizen Upgrade. Canonical content integration is pending verification in Content Studio.",
+  "curation": {
+    "source": "content-manager",
+    "project_key": "upgrade-society",
+    "collection_slug": "upgrade-society-website",
+    "collection_role": "website_content"
+  },
+  "site": {
+    "brand": "Upgrade Society",
+    "page_title": "Upgrade Society",
+    "page_description": "Upgrade Society: a focused Start Here library about the world now, co-created money, nation-states, cooperatives and ideas beyond left and right.",
+    "public_base_url": "https://upgradesociety.org",
+    "quick_start": [
+      "what-could-an-upgraded-society-look-like",
+      "what-is-co-created-money",
+      "why-the-fiat-system-is-useless-for-the-working-class",
+      "what-are-upgraded-communities"
+    ],
+    "author": {
+      "id": "upgrade-society",
+      "name": "Upgrade Society",
+      "url": "https://upgradesociety.org"
+    },
+    "publishing_identity": {
+      "id": "upgrade-society",
+      "name": "Upgrade Society",
+      "url": "https://upgradesociety.org",
+      "type": "project"
+    }
+  },
+  "presentation": {
+    "renderer": "hugo",
+    "publication_label": "Upgrade Society website",
+    "display_publication_state": true,
+    "generated_projection": ".content/content.json",
+    "project_identity": "content_id",
+    "item_metadata_fields": [
+      "content_manager_id",
+      "content_id",
+      "slug",
+      "first_published_at",
+      "created_at",
+      "updated_at",
+      "current_version_id",
+      "publication_status",
+      "project_publication_status"
+    ]
+  }
+}

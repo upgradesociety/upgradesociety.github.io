@@ -1,0 +1,11 @@
+{
+  "name": "Upgrade Society",
+  "slug": "upgradesociety",
+  "type": "website",
+  "status": "active",
+  "canonical_project": "Upgrade Society",
+  "content_authority": "Content Studio",
+  "publishing_surface": "Hugo + GitHub Pages",
+  "localhost": "http://localhost:1321",
+  "migration_source": "Citizen Upgrade NEW @ 461172acc83c252793b203a574a774445eaaa2d4"
+}

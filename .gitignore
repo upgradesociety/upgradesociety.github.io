@@ -1,0 +1,9 @@
+/public/
+/resources/_gen/
+.hugo_build.lock
+node_modules/
+.env
+.DS_Store
+
+# Generated Content Studio projection (may contain unpublished bodies)
+.content/

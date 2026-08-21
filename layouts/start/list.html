@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="book-layout">
+  {{ partial "wiki-sidebar.html" . }}
+  <main id="main" class="book-main">
+    <article class="book-article start-index">
+      <header class="article-header">
+        <p class="eyebrow">{{ .Params.kicker | default "Upgrade Society" }}</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="article-deck">{{ . }}</p>{{ end }}
+      </header>
+
+      <div class="article-body prose">{{ .Content }}</div>
+
+    </article>
+  </main>
+  <aside class="book-toc" aria-label="On this page">
+    <div class="book-toc-inner">
+      <p class="toc-label">On this page</p>
+      {{ .TableOfContents }}
+    </div>
+  </aside>
+</div>
+{{ end }}

@@ -1,0 +1,25 @@
+{
+  "name": "upgrade-society-wiki-new",
+  "private": true,
+  "version": "1.3.9",
+  "type": "module",
+  "description": "Upgrade Society NEW Hugo publishing surface migrated from Citizen Upgrade; Content Studio write integration pending verification.",
+  "scripts": {
+    "dev": "hugo server --disableFastRender --bind 0.0.0.0 --port 1322",
+    "build": "hugo --gc --minify",
+    "content:check": "node scripts/content-manager-sync.mjs check",
+    "content:status": "bash scripts/content-sync.sh status",
+    "content:pull": "bash scripts/content-sync.sh export",
+    "content:commit": "node scripts/migration-write-block.mjs",
+    "content:apply": "node scripts/apply-content-projection.mjs apply",
+    "content:verify": "npm run data:verify && node scripts/apply-content-projection.mjs check",
+    "content:sync": "npm run content:pull && npm run content:apply && npm run content:verify",
+    "content:legacy:pull": "node scripts/content-manager-sync.mjs pull",
+    "content:legacy:push:dry": "node scripts/content-manager-sync.mjs push --dry-run",
+    "content:legacy:push": "node scripts/migration-write-block.mjs",
+    "project:install-root": "node scripts/install-project-root.mjs",
+    "content:curation:apply": "node scripts/migration-write-block.mjs",
+    "content:write": "node scripts/migration-write-block.mjs",
+    "data:verify": "node scripts/verify-hugo-data.mjs"
+  }
+}
