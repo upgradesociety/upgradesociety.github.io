@@ -34,12 +34,12 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build Upgrade Society
-        run: hugo --source new --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./new/public
+          path: ./public
 
   deploy:
     environment:

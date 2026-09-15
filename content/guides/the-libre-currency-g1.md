@@ -21,8 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# The Libre Currency: Ğ1 and the Future of Human-Centered Money
-
   
 
 ---

@@ -2,9 +2,9 @@
 
 ## v1.3.9 — Citizen Upgrade author profile and publication metadata
 
-Article bylines now identify **Citizen Upgrade** and link to `/about/citizen-upgrade/`, a short author profile that can be expanded later. Article pages and section listings also display a published date. Pages with an authoritative `published_at` value use it; projected pages without one currently use the temporary preparation date configured in `hugo.toml`.
+Article bylines now identify **CitizenUpgrade** and link to the `About CitizenUpgrade` section at `/about/#about-citizenupgrade`. Article pages and section listings also display a published date. Pages with an authoritative `published_at` value use it; projected pages without one currently use the temporary preparation date configured in `hugo.toml`.
 
-The GitHub Pages workflow in `.github/workflows/hugo.yaml` builds the `new/` Hugo source and deploys it from `main`. Run `npm run build` before publishing to verify the deployable artifact.
+The public site is deployed from the nested `github-deploy/` Git repository. An approved release copies Future (`new/`) to both `current/` and `github-deploy/`, then pushes `github-deploy/main`; its `.github/workflows/hugo.yaml` builds the repository root and publishes GitHub Pages.
 
 ## v1.3.7 — Start Here theme navigation
 
@@ -31,7 +31,7 @@ HomeDev project root:
 $HOME/AI-System/Projects/upgradesociety
 ```
 
-Active Hugo source:
+Future editing source:
 
 ```text
 $HOME/AI-System/Projects/upgradesociety/new
@@ -40,10 +40,10 @@ $HOME/AI-System/Projects/upgradesociety/new
 HomeDev preview:
 
 ```text
-http://192.168.1.247:1321
+https://homedevpc.tail833d08.ts.net:8457
 ```
 
-The parent `citizenupgrade/` folder can be an independent Git repository. The `new/` directory is the current website source tracked by that repository.
+The project root tracks the Future and Current copies. `github-deploy/` is the independent Git repository connected to GitHub; `current/` is updated from Future only during an intentional release.
 
 A normal Drive `download.sh` refresh also installs the repository-root README, npm wrapper and GitHub Pages workflow from the `new/` source. To refresh those root controls manually:
 
@@ -53,7 +53,7 @@ npm run project:install-root
 
 ## Publishing identity
 
-Citizen Upgrade is the public author identity for this release. Upgrade Society remains the project and website identity.
+CitizenUpgrade is the public author identity for this release. Upgrade Society remains the project and website identity.
 
 ## v1.3.1 — Content Studio Node ABI alignment
 
@@ -238,21 +238,29 @@ HomeDev         = active runtime/development host
 
 ## GitHub deployment
 
-The independent Git repository should be rooted at:
+The independent GitHub deployment repository is:
 
 ```text
-$HOME/AI-System/Projects/upgradesociety
+$HOME/AI-System/Projects/upgradesociety/github-deploy
 ```
 
-The GitHub Pages workflow at repository root builds the Hugo site from `new/` and deploys `new/public/` from `main`.
+Its GitHub Pages workflow builds the Hugo site from the deployment repository root and deploys `public/` from `main`.
+
+The release flow is deliberately simple:
+
+```text
+new/ (Future)
+  ├─ copy to current/       → stable HomeDev preview on port 8456
+  └─ copy to github-deploy/ → commit and push main → GitHub Pages
+```
+
+The copies exclude Git metadata, generated `public/` and `resources/`, local `.content/` projections, dependencies and editor/agent state. After promotion, the tracked website source in Future, Current and GitHub deployment must match.
 
 Before public deployment, review:
 
 ```bash
 cd $HOME/AI-System/Projects/upgradesociety/new
-npm run content:status
-npm run content:verify
-hugo --minify
+npm run build
 ```
 
 The generated `.content/content.json` must remain uncommitted because it may contain unpublished bodies.

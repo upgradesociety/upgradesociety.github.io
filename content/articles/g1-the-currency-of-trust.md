@@ -21,7 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# 🪙 G1 — The Currency of Trust
 ### *How Mutual Credit Is Rebuilding Civilization from the Ground Up*
 
 ---

@@ -21,8 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# Ğ1 (June) — Introduction to Ğ1
-
 ---
 
 ## Part I — Foundations of the Libre Currency

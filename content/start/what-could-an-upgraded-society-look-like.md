@@ -21,8 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# What Could an Upgraded Society Look Like?
-
 1. The Old System No Longer Works
 
 Stability disappeared because access became expensive

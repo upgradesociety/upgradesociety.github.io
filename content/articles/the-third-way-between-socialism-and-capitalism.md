@@ -21,7 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# ⚖️ The Third Way — Between Socialism and Capitalism  
 ### *A Framework for a Free, Abundant, and Rooted Civilization*
 
 ---

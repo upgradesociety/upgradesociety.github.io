@@ -94,6 +94,36 @@ function siteTitle(item) {
   const raw = (item.tags || []).find(tag => String(tag).startsWith('site-title:'));
   return raw ? String(raw).slice('site-title:'.length).trim() : null;
 }
+function headingWords(value) {
+  return new Set(String(value || '')
+    .normalize('NFKD')
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(word => word.length > 1));
+}
+function isDuplicateTitleHeading(heading, title) {
+  const headingSet = headingWords(heading);
+  const titleSet = headingWords(title);
+  if (!headingSet.size || !titleSet.size) return false;
+  let shared = 0;
+  for (const word of titleSet) if (headingSet.has(word)) shared += 1;
+  return shared / titleSet.size >= 0.75;
+}
+function stripOpeningTitleHeading(body, title) {
+  const lines = String(body || '').split(/\r?\n/);
+  for (let index = 0; index < Math.min(lines.length, 8); index += 1) {
+    const trimmed = lines[index].trim();
+    if (!trimmed || trimmed === '---' || /^https?:\/\/\S+$/.test(trimmed) || /^v\d+(?:\.\d+)*$/i.test(trimmed)) continue;
+    const heading = trimmed.match(/^#\s+(.+?)\s*$/);
+    if (!heading || !isDuplicateTitleHeading(heading[1], title)) return body;
+    lines.splice(index, 1);
+    if (lines[index]?.trim() === '') lines.splice(index, 1);
+    return lines.join('\n');
+  }
+  return body;
+}
 
 let projection;
 try { projection = JSON.parse(await fs.readFile(projectionPath, 'utf8')); }
@@ -149,7 +179,8 @@ for (const [contentId, item] of projected) {
   data.draft = !(projectStatus(item) === 'published' && isPublic(item));
   if (item.project_published_at) data.published_at = String(item.project_published_at).slice(0, 10);
   data.content_projection_source = 'content-manager';
-  const body = item.body_markdown == null ? (current?.body || '') : item.body_markdown;
+  const sourceBody = item.body_markdown == null ? (current?.body || '') : item.body_markdown;
+  const body = stripOpeningTitleHeading(sourceBody, data.title);
   const output = renderDocument(data, body);
   if (!current || output !== current.raw) planned.push({ kind: current ? 'update' : 'create', contentId, file, output });
 }

@@ -21,8 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# Why Is There So Much Conflict and Trauma in the World? Why do We Feel So Bad?
-
 *(And what Switzerland, fiat money, Bitcoin, and G1 reveal about the root causes)*
 
 ---

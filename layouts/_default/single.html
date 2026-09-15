@@ -9,6 +9,7 @@
         {{ with .Description }}<p class="article-deck">{{ . }}</p>{{ end }}
         <div class="content-meta">
           <span>Written by <a href="{{ site.Params.authorURL | relURL }}">{{ site.Params.author }}</a></span>
+          <span>Licensed under <a href="{{ site.Params.licenseURL }}" rel="license">{{ site.Params.licenseName }}</a></span>
           {{ with .Date }}<span>Published {{ .Format "2 January 2006" }}</span>{{ else }}{{ with .Params.published_at }}<span>Published {{ . }}</span>{{ else }}{{ with site.Params.defaultPublicationDate }}<span>Published {{ . }}</span>{{ end }}{{ end }}{{ end }}
           {{ with .Params.content_type }}<span>{{ . }}</span>{{ end }}
         </div>

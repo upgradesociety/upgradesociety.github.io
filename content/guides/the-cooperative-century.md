@@ -21,8 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# 📘 The Cooperative Century: From Awakening to Sovereign Civilization
-
 ---
 
 ## Part I — The Decade of Awakening (Years 0–10)

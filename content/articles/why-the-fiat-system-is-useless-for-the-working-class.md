@@ -22,8 +22,6 @@ content_projection_source: "content-manager"
 ---
 
 https://chatgpt.com/c/6914e6c0-b200-832d-9d85-e6a0eeed97d4
-# Why the Fiat System Is Useless for the Working Class
-
 ## Introduction
 
 Everywhere you look today, from governments to central banks, from Wall Street to political debates, the world revolves around one invisible force: fiat money.

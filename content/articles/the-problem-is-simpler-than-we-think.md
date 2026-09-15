@@ -21,8 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# SECTION I — INTRO: The Problem Is Simpler Than We Think
-
 The economy looks impossibly complex.  
 But what if the root problem — and the solution — are actually simple?
 

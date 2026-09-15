@@ -21,8 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# The Ğ1 Society & Regional Depopulation (A Strategy For An Abundant Life, Today)
-
 How G1 Could Help Create One of the Most Abundant Societies in Human History
 
 1. Introduction — Why the Current System Feels Broken

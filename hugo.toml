@@ -6,8 +6,10 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   description = "Ideas, guides, essays, scenarios, and experiments for increasing human agency and building better communities and institutions."
-  author = "Citizen Upgrade"
-  authorURL = "/about/citizen-upgrade/"
+  author = "CitizenUpgrade"
+  authorURL = "/about/#about-citizenupgrade"
+  licenseName = "CC BY 4.0"
+  licenseURL = "https://creativecommons.org/licenses/by/4.0/"
   # Temporary fallback until Content Studio provides authoritative per-page dates.
   defaultPublicationDate = "16 August 2026"
   accent = "#9dff20"

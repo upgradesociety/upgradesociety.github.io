@@ -21,7 +21,6 @@ relationships: []
 content_projection_source: "content-manager"
 ---
 
-# Upgrade Hubs  
 ## A Network for New Technologies, Economies, Communities, and Regenerative Living
 
 Upgrade Hubs are **temporary pop-up co-living gatherings** in depopulating areas where people come together to experiment with new ways of living, working, and exchanging value.
