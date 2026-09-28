@@ -28,3 +28,15 @@
 .curated-reading-list .journal-row{padding:1.05rem .1rem}
 .curated-reading-list .journal-row strong{font-size:1.02rem}
 .curated-reading-list .journal-row small{max-width:68ch;font-size:.8rem;line-height:1.55}
+
+/* Keep the desktop top navigation aligned to the left. */
+.top-nav{justify-self:start}
+
+.top-nav-group{position:relative}
+.top-nav-group summary{padding:.35rem 0;cursor:pointer;list-style:none;border-bottom:2px solid transparent}
+.top-nav-group summary::-webkit-details-marker{display:none}
+.top-nav-group summary::after{content:"⌄";margin-left:.35rem;color:#667085;font-size:.75em}
+.top-nav-group[open] summary,.top-nav-group summary:hover{color:#111827;border-color:var(--green)}
+.top-nav-dropdown{position:absolute;top:calc(100% + .55rem);left:0;z-index:90;min-width:190px;padding:.4rem;border:1px solid var(--line);border-radius:7px;background:#fff;box-shadow:0 10px 28px rgba(15,23,42,.12)}
+.top-nav-dropdown a{display:block;padding:.45rem .65rem;white-space:nowrap;border:0}
+.top-nav-dropdown a:hover{background:var(--green-soft)}

@@ -1,4 +1,4 @@
-{{ $contentData := index site.Data "citizen-upgrade-new-content" }}
+{{ $navigation := site.Data.navigation.top }}
 <header class="site-header">
   <div class="header-inner">
     <button class="sidebar-toggle" type="button" aria-label="Open navigation" aria-controls="book-sidebar" aria-expanded="false">☰</button>
@@ -9,14 +9,20 @@
       <span>Upgrade Society</span>
     </a>
     <nav class="top-nav" aria-label="Primary navigation">
-      <a href="/start/"{{ if hasPrefix .RelPermalink "/start/" }} aria-current="page"{{ end }}>Start Here</a>
-      <a href="/start/#quick-start">Quick Start</a>
-      {{ range $contentData.sections }}
-        {{ if ne .name "About" }}
-          <a href="/start/#{{ .name | anchorize }}"{{ if eq $.Params.citizen_upgrade_section .name }} aria-current="page"{{ end }}>{{ .name }}</a>
+      {{ range $navigation }}
+        {{ if eq .type "dropdown" }}
+          <details class="top-nav-group">
+            <summary>{{ .label }}</summary>
+            <div class="top-nav-dropdown">
+              {{ range .links }}
+                <a href="{{ .url }}"{{ if .new_tab }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .label }}</a>
+              {{ end }}
+            </div>
+          </details>
+        {{ else }}
+          <a href="{{ .url }}"{{ if or (and (eq .active_when "start") (hasPrefix $.RelPermalink "/start/")) (and (eq .active_when "section") (eq $.Params.citizen_upgrade_section .section)) (and (eq .active_when "about") (eq $.RelPermalink "/about/")) }} aria-current="page"{{ end }}>{{ .label }}</a>
         {{ end }}
       {{ end }}
-      <a href="/about/"{{ if eq .RelPermalink "/about/" }} aria-current="page"{{ end }}>About</a>
     </nav>
     <a class="header-search-link" href="#sidebar-search" aria-label="Search navigation">⌕</a>
   </div>

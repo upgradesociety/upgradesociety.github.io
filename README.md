@@ -4,6 +4,8 @@
 
 Article bylines now identify **CitizenUpgrade** and link to the `About CitizenUpgrade` section at `/about/#about-citizenupgrade`. Article pages and section listings also display a published date. Pages with an authoritative `published_at` value use it; projected pages without one currently use the temporary preparation date configured in `hugo.toml`.
 
+The desktop top navigation and left sidebar links are defined separately as `top` and `left` lists in `data/navigation.yaml`.
+
 The public site is deployed from the nested `github-deploy/` Git repository. An approved release copies Future (`new/`) to both `current/` and `github-deploy/`, then pushes `github-deploy/main`; its `.github/workflows/hugo.yaml` builds the repository root and publishes GitHub Pages.
 
 ## v1.3.7 — Start Here theme navigation

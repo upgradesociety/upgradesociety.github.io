@@ -1,0 +1,76 @@
+# Links for the desktop top navigation.
+top:
+  - label: Start Here
+    url: /start/
+    active_when: start
+
+  - label: Quick Start
+    url: /start/#quick-start
+    active_when: never
+
+  - label: Join Discord
+    url: https://discord.gg/Fmmhr5B5hz/
+    new_tab: true   
+
+  - label: Youtube Channel
+    url: https://www.youtube.com/@UpgradeSocietyProject
+    new_tab: true         
+
+  - label: Social
+    type: dropdown
+    active_when: never
+    links:
+      - label: Join Discord
+        url: https://discord.gg/Fmmhr5B5hz/
+        new_tab: true
+      - label: Reddit
+        url: https://www.reddit.com/r/upgradedsociety/
+        new_tab: true
+
+  - label: About
+    url: /about/
+    active_when: about
+
+# Links for the left sidebar navigation.
+left:
+  - label: Start Here
+    url: /start/
+    active_when: start
+
+  - label: Quick Start
+    url: /start/#quick-start
+    active_when: never
+
+  - label: General
+    url: /start/#general
+    active_when: section
+    section: General
+
+  - label: Co-Created Money
+    url: /start/#co-created-money
+    active_when: section
+    section: Co-Created Money
+
+  - label: The World Now
+    url: /start/#the-world-now
+    active_when: section
+    section: The World Now
+
+  - label: Nation States
+    url: /start/#nation-states
+    active_when: section
+    section: Nation States
+
+  - label: Cooperatives
+    url: /start/#cooperatives
+    active_when: section
+    section: Cooperatives
+
+  - label: Beyond Left and Right
+    url: /start/#beyond-left-and-right
+    active_when: section
+    section: Beyond Left and Right
+
+  - label: About
+    url: /about/
+    active_when: about

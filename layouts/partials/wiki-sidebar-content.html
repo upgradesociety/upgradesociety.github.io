@@ -1,13 +1,6 @@
-{{ $contentData := index site.Data "citizen-upgrade-new-content" }}
+{{ $navigation := site.Data.navigation.left }}
 <nav class="book-nav" aria-label="Upgrade Society themes">
-  <a class="nav-section" href="/start/"{{ if hasPrefix .RelPermalink "/start/" }} aria-current="page"{{ end }}><span>Start Here</span><span aria-hidden="true">›</span></a>
-
-  <a class="nav-section" href="/start/#quick-start"><span>Quick Start</span><span aria-hidden="true">›</span></a>
-  {{ range $contentData.sections }}
-    {{ if ne .name "About" }}
-      <a class="nav-section" href="/start/#{{ .name | anchorize }}"{{ if eq $.Params.citizen_upgrade_section .name }} aria-current="page"{{ end }}><span>{{ .name }}</span><span aria-hidden="true">›</span></a>
-    {{ end }}
+  {{ range $navigation }}
+    <a class="nav-section" href="{{ .url }}"{{ if or (and (eq .active_when "start") (hasPrefix $.RelPermalink "/start/")) (and (eq .active_when "section") (eq $.Params.citizen_upgrade_section .section)) (and (eq .active_when "about") (eq $.RelPermalink "/about/")) }} aria-current="page"{{ end }}><span>{{ .label }}</span><span aria-hidden="true">›</span></a>
   {{ end }}
-
-  <a class="nav-section" href="/about/"{{ if eq .RelPermalink "/about/" }} aria-current="page"{{ end }}><span>About</span><span aria-hidden="true">›</span></a>
 </nav>
